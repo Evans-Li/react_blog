@@ -1,0 +1,34 @@
+
+
+/* fly */
+.fly-enter {
+  opacity: 0.01;
+}
+.fly-appear {
+  opacity: 0.01;
+}
+
+.fly-enter.fly-enter-active {
+  opacity: 1;
+  transition: opacity .6s ease-in;
+}
+.fly-appear.fly-appear-active {
+  opacity: 1;
+  transition: opacity .6s ease-in;
+}
+.fly-leave {
+  opacity: 1;
+}
+.fly-leave.fly-leave-active {
+  opacity: 0.1;
+  transition: opacity 1s ease-in;
+}
+
+/* .fly-exit {
+  opacity: 1;
+}
+.fly-exit.fly-exit-active {
+  opacity: 0.1;
+  transition: opacity 1s ease-in;
+} */
+

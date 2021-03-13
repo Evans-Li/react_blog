@@ -1,0 +1,92 @@
+
+.share{
+  position: fixed;
+  left: 10vw;
+  top: 30vh;
+  width: 75px;
+  text-align: center;
+
+}
+.share .share-text{
+  color: #8C939F;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.ant-tooltip-inner{
+  padding: 1px 1px 1px 1px;
+  /* padding: 0; */
+}
+
+.share-qq{
+  color: #8C939F !important;
+  display: inline-block;
+  width: 100%;
+  border-radius: 50%;
+}
+.share-qq:hover{
+  color: #3280F6 !important;
+}
+
+.share-wechat{
+  color: #8C939F !important;
+  display: inline-block;
+  width: 100%;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top:0; */
+}
+
+.share-wechat:hover{
+  color: #63AD48 !important;
+}
+
+
+/* 按钮样式 */
+.btn{
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+  padding-top: 2px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+/* 未点击 */
+.btn-no-active{
+  color: #B3BAC1;
+}
+/* 已点击 */
+.btn-active{
+  color: #3280F6;
+}
+
+
+/* 鼠标经过 */
+.btn-hover{
+  color: #8C939F;
+  /* color: red; */
+}
+
+/* 微信二维码分享 */
+.share-wechat-warp{
+  position: relative;
+}
+.share-wechat-qr{
+  position: absolute;
+  top: 45px;
+  left: -10px;
+  display: none;
+}
+.share-wechat-hover:hover+ .share-wechat-qr{
+  display: block;
+}

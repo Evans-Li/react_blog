@@ -1,0 +1,18 @@
+/* .my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+} */
+
+.list-box{
+  border-bottom: 1px solid #e8e8e8;
+}

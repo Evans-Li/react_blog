@@ -1,0 +1,197 @@
+.author-div {
+  text-align: center;
+  padding: 1rem;
+
+}
+
+.author-div div {
+  /* margin-bottom: 1rem; */
+}
+
+.author-div p {
+  font-size: 12px;
+}
+
+.author-introduction {
+  font-size: .8rem;
+  color: #999;
+}
+
+.account {
+  background-color: #999;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.ant-tag {
+  margin: 5px 3px;
+}
+
+
+
+
+.audiol .pl-contro{
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.pl-contro:hover {
+  /* cursor: url('http://www.dabaoku.com/gif/017/gif010.gif') 4 4, auto; */
+  /* cursor: url(../../static/music.gif); */
+  /* cursor: url(/static/music.gif); */
+}
+.aperture{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 20, .8);
+  z-index: 6;
+  border-radius: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  animation: 3s ease-in-out 1s infinite aperture;
+}
+.mm {
+  position: absolute;
+  bottom: 33%;
+  width: 100%;
+  left: 3px;
+  z-index: 6;
+  /* display: none; */
+}
+.mask{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  /* background: rgba(0, 0, 0, .4); */
+  z-index: 6;
+}
+.mm span{
+  display: inline-block;
+  width: 5px;
+  height: 15px;
+  margin-right: 5px;
+  background: rgba(0, 0, 0, .4);
+  animation: 1s linear 1s infinite reverse yinyue;
+}
+.mm span:nth-child(1){
+  background: rgba(125, 199, 40, 0.6);
+  animation-delay: .9s;
+}
+.mm span:nth-child(2){
+  background: rgba(38, 91, 151, 0.6);
+  animation-delay: .8s;
+}
+.mm span:nth-child(3){
+  background: rgba(24, 195, 200, 0.6);
+  animation-delay: .7s;
+}
+.mm span:nth-child(4){
+  background: rgba(133, 37, 120, 0.7);
+  animation-delay: .6s;
+}
+.mm span:nth-child(5){
+  background: rgba(133, 37, 120, 0.8);
+  animation-delay: .5s;
+}.mm span:nth-child(6){
+  background: rgba(200, 173, 16, 0.8);
+  animation-delay: .5s;
+}.mm span:nth-child(7){
+  background: rgba(23, 87, 190, 0.8);
+  animation-delay: .6s;
+}.mm span:nth-child(8){
+  background: rgba(133, 37, 120, 0.8);
+  animation-delay: .7s;
+}.mm span:nth-child(9){
+  background: rgba(253, 12, 221, 0.8);
+  animation-delay: .8s;
+}.mm span:nth-child(10){
+  background: rgba(236, 136, 4, 0.8);
+  animation-delay: .9s;
+}
+
+@keyframes yinyue {
+  0%{
+    transform: scale(1)
+  }
+  25%{
+    transform: scale(1, 4)
+  }
+  75%{
+    transform: scale(1, 2)
+  }
+  100%{
+    transform: scale(1)
+  }
+}
+
+
+
+@keyframes aperture {
+  0%{
+    width: 0;
+    height: 0;
+    transform: scale(1,1);
+    background: rgba(0, 0, 100, 0);
+  }
+  100%{
+    width: 130px;
+    height: 130px;
+    transform: scale(1,1);
+    background: rgba(0, 0, 100, .6);
+  }
+}
+
+
+@-webkit-keyframes xuanzhaun {
+  0%{
+    -webkit-transform:rotate(0deg)
+  }
+  100%{
+    -webkit-transform:rotate(360deg)
+  }
+}
+
+
+
+.my-node-enter {
+  opacity: 0;
+}
+
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.my-node-exit {
+  opacity: 1;
+}
+
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+.my-node-appear {
+  opacity: 0.01;
+}
+
+.group-appear-active {
+  opacity: 1;
+  transition: all 10000ms ease-out;
+}
+
+.author-name-p{
+  font-size: 20px !important;
+  font-weight: 700;
+  color: #000;
+}

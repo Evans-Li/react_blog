@@ -1,0 +1,38 @@
+.list-icon span:nth-child(1){
+  /* padding-left: 3px; */
+}
+
+.list-icon span {
+  font-size: 12px;
+}
+
+.listicon-istop-box{
+  display: inline-block;
+  /* width: 100%; */
+}
+/* 
+@media only all and (max-width: 1200px){
+  .listicon-istop-box{
+    display: block;
+    padding-left: 6px;
+  }
+  .list-art-icon{
+    padding-left: 6px;
+    display: inline;
+  }
+  
+}
+
+@media only all and (min-width: 1200px){
+  .list-title{
+    padding-left: 0;
+  }
+  .listicon-istop-box{
+    display: inline;
+    padding-left: 6px;
+  }
+} */
+
+
+
+

@@ -1,0 +1,18 @@
+.hudie{
+  position: fixed;
+  bottom: 5vh;
+  left: 2vh;
+}
+
+.hudie img{
+  /* min-height: 10vh; */
+  width: 18vh;
+}
+
+@media only screen and (max-width: 700px) {
+  [class*='hudieImg'] {
+    display: none;
+  }
+}
+
+

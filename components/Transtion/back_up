@@ -1,0 +1,67 @@
+
+/* fly */
+.fly-enter {
+  opacity: 0;
+}
+.fly-appear {
+  opacity: 0;
+}
+
+.fly-enter.fly-enter-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+/* .fly-appear .fly-appear-active {
+  /* opacity: 0.1; 
+  transition: opacity 1s ease-in;
+} */
+ .fly-leave {
+  opacity: 0;
+}
+.fly-leave.fly-leave-active {
+   opacity: 0; 
+  transition: opacity 1s ease-in;
+} 
+
+.fly-exit {
+  opacity: 0;
+} 
+
+.fly-exit.fly-exit-active {
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+}  
+
+
+
+
+
+
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

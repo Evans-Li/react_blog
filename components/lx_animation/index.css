@@ -1,0 +1,14 @@
+.lx-animation{
+  width: 100%;
+  height: 96%;
+  opacity: 1;
+  -webkit-animation: 10s lx 0s ease-in;
+}
+@-webkit-keyframes lx{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
