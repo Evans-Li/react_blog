@@ -252,7 +252,7 @@ const Home = (list) => {
         </Col>
         <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
           <Author />
-          <Affix offsetTop={52}>
+          <Affix offsetTop={70}>
             <HomeTab />
             <Advert />
           </Affix>

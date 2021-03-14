@@ -32,3 +32,18 @@
 .ant-divider-horizontal.ant-divider-with-text-center::before, .ant-divider-horizontal.ant-divider-with-text-left::before, .ant-divider-horizontal.ant-divider-with-text-right::before, .ant-divider-horizontal.ant-divider-with-text-center::after, .ant-divider-horizontal.ant-divider-with-text-left::after, .ant-divider-horizontal.ant-divider-with-text-right::after{
   border-top: 1px solid #1890ff
 }
+.comment-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.comment-flex>div{
+  flex: 1;
+}
+.comment-flex .ant-row:nth-child(2){
+  padding-left: 5px ;
+  box-sizing: border-box;
+}
+
+.ant-form-item{
+  margin-bottom: 4px;
+}

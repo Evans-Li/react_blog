@@ -35,3 +35,14 @@
 .ant-divider-horizontal.ant-divider-with-text-center::before, .ant-divider-horizontal.ant-divider-with-text-left::before, .ant-divider-horizontal.ant-divider-with-text-right::before, .ant-divider-horizontal.ant-divider-with-text-center::after, .ant-divider-horizontal.ant-divider-with-text-left::after, .ant-divider-horizontal.ant-divider-with-text-right::after{
   border-top: 1px solid #1890ff
 }
+
+/* .list-icon>span span {
+  padding: 0  !important;;
+} */
+.list-icon>span{
+  margin-right: 10px !important;
+}
+
+.anticon{
+  padding: 0 !important;
+}

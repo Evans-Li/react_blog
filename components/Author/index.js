@@ -134,7 +134,7 @@ const Author = (data) => {
           <Tag color="red">入门程序员</Tag>
           {/* <Tag color="gold">没有经验</Tag> */}
           <Tag color='cyan'>文章共{all_part_count ? <ViewCount value={all_part_count} /> : 0}篇</Tag>
-          <Tag color='blue'>总被访问{all_view_count ? <ViewCount value={all_view_count} /> : 0}次</Tag>
+          <Tag color='blue'>共被访问{all_view_count ? <ViewCount value={all_view_count} /> : 0}次</Tag>
         </div>
       </div>
       <div className="author-introduction">

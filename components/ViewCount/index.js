@@ -6,7 +6,7 @@ const ViewCount = (value) => {
   const step2 = 21
   const style = {
     // width: '60px',
-    padding:'0 5px 0 0'
+    padding:'0 2px  0'
   }
 
   useEffect(()=>{
@@ -38,7 +38,7 @@ const ViewCount = (value) => {
           return
         }
         setCount(i)
-      }, 3);
+      }, 20);
     }
     //调用定时器
     timer()
