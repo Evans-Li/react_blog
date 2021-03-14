@@ -37,9 +37,9 @@ const Share = ({ props }) => {
 
   // 判断当前环境  
   if (process.env.NODE_ENV == 'development') {
-    shareQQData.baseUrl = `http://jsv5.tk:3000${props.url.asPath}`
+    shareQQData.baseUrl = `http://101.200.153.19${props.url.asPath}`
   } else if (process.env.NODE_ENV == 'production') {
-    shareQQData.baseUrl = `http://jsv5.tk:3000${props.url.asPath}`
+    shareQQData.baseUrl = `http://101.200.153.19${props.url.asPath}`
   }
 
   let shareQQUrl = `http://connect.qq.com/widget/shareqq/index.html?url=${shareQQData.baseUrl}&sharesource=qzone&title=${shareQQData.title}&pics=${shareQQData.pics}&summary=${shareQQData.desc}`
