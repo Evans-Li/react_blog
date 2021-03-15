@@ -229,7 +229,11 @@ const Home = (list) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Evans-blog-首页</title>
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+        
+        <link rel="bookmark" href="/static/favicon.ico" type="image/x-icon"　/>
         <body style='background: url(https://s3.ax1x.com/2021/03/15/6BHJIA.png)'></body>
+        
       </Helmet>
 
       <Affix offsetTop={0}>
