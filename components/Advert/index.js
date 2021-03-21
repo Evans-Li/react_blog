@@ -10,7 +10,7 @@ const Advert = () => {
     ]
     setImgurls(imglist);
     return ()=>{
-      console.log('advert 销毁');
+      console.log('advert Destroy');
     }
   },[])
   return (
@@ -19,7 +19,7 @@ const Advert = () => {
         !!imgurls.length 
           ? imgurls.map((item,index)=>{
             return (
-              <img src={item.img} alt={item.img} width='100%' />
+              <img  key={item+index} src={item.img} alt={item.img} width='100%' />
             )
           })
           : null

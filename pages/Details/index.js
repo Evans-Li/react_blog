@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
-
-import { Row, Col, Affix, Breadcrumb, Card } from 'antd'
+import './index.css'
+import '../../static/style/md.css';
+import 'markdown-navbar/dist/navbar.css';
+import { Row, Col, Affix, Breadcrumb } from 'antd'
 import Header from '../../components/Header'
 import Author from '../../components/Author'
 import Advert from '../../components/Advert'
-import MarkNav from 'markdown-navbar';
-import 'markdown-navbar/dist/navbar.css';
 import axios from 'axios';
 import marked from 'marked'
 import hljs from "highlight.js";
 import 'highlight.js/styles/monokai-sublime.css';
-import './index.css'
 import Tocify from '../../components/tocify.tsx'
 import Footer from '../../components/Footer'
 import { serviceUrl } from '../../config/apiUrl'
-import { $GET, $POST } from '../../config/request'
 import { Helmet } from 'react-helmet'
 import BackTopBtn from '../../components/BackTopBtn'
 import ListIcon from '../../components/ListIcon'
@@ -24,7 +21,6 @@ import CommentForm from '../../components/CommentForm'
 import CommentList from '../../components/CommentList/index'
 import Transition from '../../components/Transtion'
 import Share from '../../components/Share'
-import '../../static/style/md.css'
 
 const Detailed = (props) => {
   const tocify = new Tocify()
@@ -102,7 +98,9 @@ const Detailed = (props) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Evans-{props.title}</title>
+        <title>{props.title}</title>
+        <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="bookmark" href="/static/favicon.ico" type="image/x-icon" />
         <body style='background: url(https://s3.ax1x.com/2021/03/15/6BHJIA.png)'></body>
       </Helmet>
       <Head>
@@ -126,15 +124,18 @@ const Detailed = (props) => {
                   {props.title}
                 </div>
                 <ListIcon item={props} className='center' />
-                <Transition
-                  in={true}
-                  timeout={1500}
-                  classNames={"fly"}
-                  appear={true}
-                  unmountOnExit={true}
-                  item={renderItem}
-                >
-                </Transition>
+                <div>
+                  <Transition
+                    in={true}
+                    timeout={1500}
+                    classNames={"fly"}
+                    appear={true}
+                    unmountOnExit={true}
+                    item={renderItem}
+                  >
+                  </Transition>
+                </div>
+               
               </div>
               <div id='comment-box'>
                 <CommentList media={media} artId={props.id} listKey={commentKey} upComment={upComment} />

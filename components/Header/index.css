@@ -3,12 +3,10 @@
     /* background: linear-gradient(to right, #373b44, #4286f4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* background: linear-gradient(to right,#ffffff, #6dd5fa, #ffffff); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right,#ffffff, #9AC4E4, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    padding-top: 20px;
+    padding-top: 15px;
     overflow: hidden;
     /* height: 4rem; */
-    height: 70px;
+    height: 65px;
     border-bottom:1px solid #eee;
     position: relative;
     /* border-top: #999999 4px solid; */

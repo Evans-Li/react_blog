@@ -55,7 +55,7 @@ const CommentForm = ({ onCancel, onOk, isReply = false }) => {
       <Spin tip="Loading..." spinning={isLoading}>
         <Form layout='horizontal' ref={formRef} onFinish={onFinish} validateMessages={validateMessages} >
             <Form.Item name={'com_name'} label="昵称" rules={[{ required: true }]} >
-              <Input placeholder='我叫你什么好呢?' />
+              <Input placeholder='请输入你的昵称' />
             </Form.Item>
             <Form.Item name={'email'} label="邮箱" rules={[{ type: 'email', required: true }]} >
               <Input placeholder='必填(不公开)' />

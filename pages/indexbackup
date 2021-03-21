@@ -24,8 +24,7 @@ import '../../static/style/md.css'
 import LoadMore from '../../components/LoadMore/index'
 import LoadingPage from '../../components/Loading';
 import {_awaitFn} from '../index'
-
-import Layout from '../../components/Layout'
+import LXAnimation from '../../components/lx_animation'
 
 
 const renderer = new marked.Renderer();
@@ -166,14 +165,45 @@ const ArticleList = (list) => {
 
   return (
     <div>
-      <Layout 
-        item = { renderItem }
-        showLoadingPage = { showLoadPage }
-        showLoadMoreBtn = { showLoadMoreBtn }
-        onLoadMore = { _onLoadMore }
-        ></Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        {/* <title>Evans-blog-{list.data[0].typeName}</title> */}
+        <body style='background: url(https://s3.ax1x.com/2021/03/15/6BHJIA.png)'></body>
+      </Helmet>
+      <Header>
+        <title>Home</title>
+      </Header>
+      <Row className="comm-main" type="flex" justify="center">
+        <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={10}   >
+          <div>
+            <div className="bread-div">
+              <Breadcrumb>
+                <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
+                <Breadcrumb.Item>{breadName}</Breadcrumb.Item>
+              </Breadcrumb>
+            </div>
+            {/* <LXAnimation items={renderItem}/> */}
+            <Transition
+              in={true}
+              timeout={1000}
+              classNames={"fly"}
+              appear={true}
+              unmountOnExit={true}
+              item={renderItem}
+            />
+          </div>
+          { showLoadMoreBtn ? <LoadMore onloadMore={_onLoadMore} /> : null}
+        </Col>
+        <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
+          <Author />
+          <HomeTab />
+          <Advert />
+        </Col>
+      </Row>
+      <Footer />
+      <BackTopBtn />
+      { showLoadPage ? <LoadingPage /> : null }
     </div>
-    
   )
 
 }

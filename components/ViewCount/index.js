@@ -38,7 +38,7 @@ const ViewCount = (value) => {
           return
         }
         setCount(i)
-      }, 20);
+      }, 10);
     }
     //调用定时器
     timer()
