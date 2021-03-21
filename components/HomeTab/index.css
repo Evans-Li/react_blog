@@ -21,6 +21,9 @@
   text-decoration: none;
   padding-bottom: 6px;
 }
+.home-tab{
+  padding: 0;
+}
 
 
 .home-tab a:hover {
@@ -30,6 +33,10 @@
   background-size: 20px auto;
   animation: waveMove 1s infinite linear;
 }
+.comm-box{
+  /* padding: 0; */
+}
+
 
 
 @keyframes waveMove {
@@ -40,6 +47,12 @@
       background-position: -20px 100%;
   }
 }
+
+/* #__next > div > div.ant-row.ant-row-center.comm-main > div.ant-col.comm-right.ant-col-xs-0.ant-col-sm-0.ant-col-md-7.ant-col-lg-5.ant-col-xl-4 > div:nth-child(2) > div > div.comm-box.home-tab > div > div.ant-tabs-nav > div.ant-tabs-nav-wrap > div {
+  display: flex !important;
+  justify-content:space-between !important;
+  align-items: center !important;
+} */
 
 
 .tab-h{
