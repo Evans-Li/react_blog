@@ -1,9 +1,7 @@
 import React from 'react'
 import './index.css'
-import { Card, Tabs } from 'antd'
-import {
-  QqOutlined
-} from '@ant-design/icons'
+import {  Tabs } from 'antd'
+import { QqOutlined } from '@ant-design/icons'
 const { TabPane } = Tabs
 
 const qqList = [0,1,2,3,4].map((item,index)=>{
@@ -16,26 +14,26 @@ const qqList = [0,1,2,3,4].map((item,index)=>{
 const HomeTab = () => {
   return (
     <div className='comm-box home-tab'>
-      <Tabs>
+      <Tabs >
         <TabPane tab="QQ群" key="1">
           <div>
             <p className='qq-tips'>加入QQ群一起学习!!</p>
             {
-              qqList.map(item => (
-                <p><a target="_blank" href={item.href}><QqOutlined /><span className='text'>{item.text}</span></a></p>
+              qqList.map((item,index) => (
+                <p key={index+item}><a key={item+index} target="_blank" href={item.href}><QqOutlined /><span className='text'>{item.text}</span></a></p>
               ))
             }
           </div>
         </TabPane>
         <TabPane tab="公众号" key="2">
           <div>
-            <h3 className='tab-h'>即将上线...</h3>
+            <p className='tab-h'>即将上线...</p>
           </div>
         </TabPane>
 
         <TabPane tab="小密圈" key="3">
           <div>
-            <h3 className='tab-h'>即将上线...</h3>
+            <p className='tab-h'>即将上线...</p>
           </div>
         </TabPane>
       </Tabs>
